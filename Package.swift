@@ -5,10 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "FQFramework",
+    platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "FQFramework",
+            type: .dynamic,
             targets: ["FQFramework"]),
     ],
     dependencies: [
